@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 10.3.0.52:3307
--- Genereertijd: 14 feb 2013 om 20:36
+-- Genereertijd: 14 feb 2013 om 20:49
 -- Serverversie: 5.1.63
 -- PHP-versie: 5.3.2-1ubuntu4.18
 
@@ -13,8 +13,28 @@ SET time_zone = "+00:00";
 --
 -- Databank: `activity`
 --
-CREATE DATABASE `activity` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci;
-USE `activity`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `acl`
+--
+
+DROP TABLE IF EXISTS `acl`;
+CREATE TABLE IF NOT EXISTS `acl` (
+  `acl_id` int(11) NOT NULL AUTO_INCREMENT,
+  `acl_name` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `effective_rights` int(11) NOT NULL,
+  PRIMARY KEY (`acl_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=3 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `acl`
+--
+
+INSERT INTO `acl` (`acl_id`, `acl_name`, `effective_rights`) VALUES
+(1, 'lezen', 1),
+(2, 'schrijven & wijzigen', 0);
 
 -- --------------------------------------------------------
 
@@ -66,6 +86,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `email` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `password` char(128) COLLATE latin1_general_ci NOT NULL,
   `salt` char(128) COLLATE latin1_general_ci NOT NULL,
+  `rights` int(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
 
@@ -73,8 +94,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 -- Gegevens worden uitgevoerd voor tabel `members`
 --
 
-INSERT INTO `members` (`id`, `username`, `email`, `password`, `salt`) VALUES
-(1, 'test_user', 'test@example.com', '00807432eae173f652f2064bdca1b61b290b52d40e429a7d295d76a71084aa96c0233b82f1feac45529e0726559645acaed6f3ae58a286b9f075916ebf66cacc', 'f9aab579fc1b41ed0c44fe4ecdbfcdb4cb99b9023abb241a6db833288f4eea3c02f76e0d35204a8695077dcf81932aa59006423976224be0390395bae152d4ef');
+INSERT INTO `members` (`id`, `username`, `email`, `password`, `salt`, `rights`) VALUES
+(1, 'test_user', 'test@example.com', '00807432eae173f652f2064bdca1b61b290b52d40e429a7d295d76a71084aa96c0233b82f1feac45529e0726559645acaed6f3ae58a286b9f075916ebf66cacc', 'f9aab579fc1b41ed0c44fe4ecdbfcdb4cb99b9023abb241a6db833288f4eea3c02f76e0d35204a8695077dcf81932aa59006423976224be0390395bae152d4ef', 1);
 
 -- --------------------------------------------------------
 
