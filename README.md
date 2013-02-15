@@ -38,3 +38,5 @@ Uitdraaien moeten gemaakt kunnen worden. Te weten de volgende:
 * Noodgegevens lijst van deelnemers aan een specifieke activiteit
 
 Indien mogelijk ook graag een mogelijkheid tot het slechts invullen van postcode/huisnummer/land en dat straatnaam en woonplaats automatisch aangevuld worden.
+
+blaat
