@@ -3,6 +3,7 @@
 	<title>login</title>
 	<script type="text/javascript" src="include/sha512.js"></script>
 	<script type="text/javascript" src="include/forms.js"></script>
+	<link href="/template/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 	
 <body>
