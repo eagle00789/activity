@@ -2,3 +2,28 @@ body
 {
 	background-color: #f0f0f0;
 }
+
+.login_form {
+    width:340px;
+    height:120px;
+    background-color:#d9d9d9;
+    position:absolute;
+    margin-left:-170px;
+    margin-top:-60px;
+    top:50%;
+    left:50%;
+}
+table.login_form td {
+	padding: 2px;
+}
+td.logo {
+	text-align: center;
+}
+div.login_form_wrapper input[type="text"], div.login_form_wrapper input[type="password"] {
+	width: 230px;
+}
+.login_form_wrapper {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
