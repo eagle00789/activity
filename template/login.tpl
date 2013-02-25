@@ -13,7 +13,7 @@
 		<form action="process_login.php" method="post" name="login_form">
 			<table class="login_form">
 				<tr>
-					<td class="logo" colspan="2"><img src="/template/img/logo.png" /></td>
+					<td class="logo" colspan="2"><img src="/template/img/logo.png" alt="Logo"/></td>
 				</tr>
 				<tr>
 					<td>Email:</td>
