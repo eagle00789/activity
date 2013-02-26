@@ -13,7 +13,7 @@
 		<form action="process_login.php" method="post" name="login_form">
 			<table class="login_form">
 				<tr>
-					<td class="logo" colspan="2"><img src="/template/img/logo.png" alt="Logo"/></td>
+					<td class="center" colspan="2"><img src="/template/img/logo.png" alt="Logo"/></td>
 				</tr>
 				<tr>
 					<td>Email:</td>
@@ -24,7 +24,7 @@
 					<td><input type="password" name="password" id="password"/></td>
 				</tr>
 				<tr>
-					<td><input type="button" value="Login" onclick="formhash(this.form, this.form.password);" /></td>
+					<td class="center" colspan="2"><input type="button" value="Login" onclick="formhash(this.form, this.form.password);" />&nbsp;<input type="reset" value="Reset" /></td>
 				</tr>
 			</table>
 		</form>
