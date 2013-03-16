@@ -40,4 +40,11 @@ Uitdraaien moeten gemaakt kunnen worden. Te weten de volgende:
 Indien mogelijk ook graag een mogelijkheid tot het slechts invullen van postcode/huisnummer/land en dat straatnaam en woonplaats automatisch aangevuld worden.
 
 ========
+Testgebruiker:
+
+    Username: test_user
+    Email: test@example.com
+    Password: 6ZaxN2Vzm9NUJT2y
+
+========
 This software uses TemplatePower by R.P.J. Velzeboer. Templatepower is released under the GNU General Public License as published by the Free Software Foundation. 

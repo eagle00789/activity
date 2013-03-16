@@ -20,6 +20,10 @@ body
 	border-radius: 7px;
 }
 
+.loginerror {
+	background-color:red;
+}
+
 table.login_form td {
 	padding: 2px;
 }

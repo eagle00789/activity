@@ -15,6 +15,12 @@
 				<tr>
 					<td class="center" colspan="2"><img src="/template/img/logo.png" alt="Logo"/></td>
 				</tr>
+				<!-- START BLOCK : LOGINERROR -->
+				<tr class="loginerror">
+					<td>{ERROR_TYPE}:</td>
+					<td>{ERROR_MSG}</td>
+				</tr>
+				<!-- END BLOCK : LOGINERROR -->
 				<tr>
 					<td>Email:</td>
 					<td><input type="text" name="email" /></td>
