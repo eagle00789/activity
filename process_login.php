@@ -9,7 +9,7 @@ if(isset($_POST['email'], $_POST['p'])) {
    $password = $_POST['p']; // The hashed password.
    if(login($email, $password, $mysqli) == true) {
       // Login success
-      echo 'Success: You have been logged in!';
+      header('Location: ./index.php');
    } else {
       // Login failed
       header('Location: ./login.php?error=1');
