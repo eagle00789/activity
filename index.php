@@ -11,6 +11,7 @@ if(login_check($mysqli) == true) {
 	$Tpl->AssignInclude("FOOTER", "template/footer.tpl");
 	$Tpl->prepare(); // template object voorbereiden
 
+
 	$Tpl->PrintToScreen(); // templaten parsen en tonen
 } else {
    header('Location: ./login.php?error=2');
