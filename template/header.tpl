@@ -33,10 +33,10 @@
 <body>
 <nav id="menu-wrap">
 <ul id="menu">
-	<li><a href="#">Begin</a></li>
+	<li><a href="index.php">Begin</a></li>
 	<li><a href="#">Leden</a></li>
 	<li><a href="#">Activiteiten</a></li>
 	<li><a href="logout.php">Afmelden</a></li>
-	<li><a href="#">Over...</a></li>
+	<li><a href="about.php">Over...</a></li>
 </ul>
 </nav>
