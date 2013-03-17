@@ -34,15 +34,7 @@
 <nav id="menu-wrap">
 <ul id="menu">
 	<li><a href="#">Begin</a></li>
-	<li>
-		<a href="#">Leden</a>
-		<ul>
-			<li><a href="#">CSS</a></li>
-			<li><a href="#">Graphic design</a></li>
-			<li><a href="#">Development tools</a></li>
-			<li><a href="#">Web design</a></li>
-		</ul>
-	</li>
+	<li><a href="#">Leden</a></li>
 	<li><a href="#">Activiteiten</a></li>
 	<li><a href="logout.php">Afmelden</a></li>
 	<li><a href="#">Over...</a></li>
