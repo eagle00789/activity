@@ -10,6 +10,7 @@ if(login_check($mysqli) == true) {
 	$Tpl->AssignInclude("HEADER", "template/header.tpl");
 	$Tpl->AssignInclude("FOOTER", "template/footer.tpl");
 	$Tpl->prepare(); // template object voorbereiden
+	$Tpl->assign("CLASS4", ' class="active"');
 
 
 	$Tpl->PrintToScreen(); // templaten parsen en tonen

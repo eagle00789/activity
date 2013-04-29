@@ -116,4 +116,19 @@ function login_check($mysqli) {
    }
 }
 
+function countLines($path, $extensions = array('php')) {
+    $it = new RecursiveIteratorIterator( new RecursiveDirectoryIterator($path) );
+    $files = array();
+    foreach ($it as $file1=>$file2) {
+        if ($file2->isDir()) {
+            continue;
+        }
+        $parts = explode('.', $file2->getFilename());
+        $extension = end($parts);
+        if (in_array($extension, $extensions)) {
+            $files[$file2->getPathname()] = count(file($file2->getPathname()));
+        }
+    }
+    return $files;
+}
 ?>
