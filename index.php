@@ -12,7 +12,7 @@ if(login_check($mysqli) == true) {
 	$Tpl->AssignInclude("MAINBODY", "template/index.tpl");
 	$Tpl->prepare(); // template object voorbereiden
 	$Tpl->assign("COUNTER_MEMBERS", countMembers($mysqli));
-	$echo countMembers($mysqli);
+	//$echo countMembers($mysqli);
 
 	$Tpl->PrintToScreen(); // templaten parsen en tonen
 } else {
