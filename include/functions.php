@@ -131,4 +131,15 @@ function countLines($path, $extensions = array('php')) {
     }
     return $files;
 }
+
+function countMembers($mysqli) {
+	if ($stmt = $mysqli->prepare("SELECT count(*) FROM person WHERE 1")) { 
+		$stmt->execute(); // Execute the prepared query.
+		$stmt->store_result();
+		$stmt->bind_result($count); // get variables from result.
+		return $count;
+	} else {
+		return false;
+	}
+}
 ?>

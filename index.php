@@ -9,9 +9,10 @@ if(login_check($mysqli) == true) {
 	$Tpl = new TemplatePower('template/basic.tpl');	// template file laden
 	$Tpl->AssignInclude("HEADER", "template/header.tpl");
 	$Tpl->AssignInclude("FOOTER", "template/footer.tpl");
+	$Tpl->AssignInclude("MAINBODY", "template/index.tpl");
 	$Tpl->prepare(); // template object voorbereiden
-	$Tpl->assign("CLASS4", ' class="active"');
-
+	$Tpl->assign("COUNTER_MEMBERS", countMembers($mysqli));
+	$echo countMembers($mysqli);
 
 	$Tpl->PrintToScreen(); // templaten parsen en tonen
 } else {
