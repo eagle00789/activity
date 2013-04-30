@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>login</title>
-	<script type="text/javascript" src="include/sha512.js"></script>
-	<script type="text/javascript" src="include/forms.js"></script>
+	<script type="text/javascript" src="include/js/sha512.js"></script>
+	<script type="text/javascript" src="include/js/forms.js"></script>
 	<link href="/template/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 	

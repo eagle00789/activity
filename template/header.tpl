@@ -4,9 +4,9 @@
 <head>
 	<title>Activiteiten</title>
 	<meta name="viewport" content="width=device-width">
-	<script type="text/javascript" src="include/sha512.js"></script>
-	<script type="text/javascript" src="include/forms.js"></script>
-	<script src="include/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="include/js/sha512.js"></script>
+	<script type="text/javascript" src="include/js/forms.js"></script>
+	<script src="include/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(function() {
 			if ($.browser.msie && $.browser.version.substr(0,1)<7)
